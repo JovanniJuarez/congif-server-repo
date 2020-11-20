@@ -1,0 +1,16 @@
+logging:
+  level:
+    com:
+      example:
+        demo:
+          prueba:
+            tecnica: DEBUG
+            
+feign:
+  client:
+    config:
+      REPOSITORY-DATA:
+        loggerLevel: full
+      default:
+        connecTimeout: 20000
+        readTimeout: 20000
